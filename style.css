@@ -126,20 +126,30 @@ body {
     }
   }
 
+
   @media (max-width: 900px) {
     .container {
-      grid-template-columns: repeat(2, 1fr); /* 画面が900px以下の場合は2列 */
+      grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
     }
     .header .menu li a {
-    font-size: 0.8em; /* 文字サイズを小さくする */
+      font-size: 0.8em; /* Decrease font size for menu items */
+    }
+    .header-logo img {
+      height: 25px; /* Decrease header logo image height */
+    }
   }
-  }
-
+  
   @media (max-width: 600px) {
     .container {
-      grid-template-columns: 1fr; /* 画面が600px以下の場合は1列 */
+      grid-template-columns: 1fr; /* One column layout for very small screens */
     }
     .header .menu li a {
-    font-size: 0.7em; /* さらに小さい画面で文字サイズを小さくする */
-  }
+      font-size: 0.7em; /* Even smaller font size for menu items */
+    }
+    .header-logo img {
+      height: 20px; /* Further decrease header logo image height */
+    }
+    .header {
+      padding: 10px; /* Optional: reduce padding to save space */
+    }
   }
